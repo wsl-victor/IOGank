@@ -33,6 +33,15 @@
 		577E60821DC8843B00C53A99 /* GKMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E60811DC8843B00C53A99 /* GKMeViewController.swift */; };
 		577E60841DC8845A00C53A99 /* GKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E60831DC8845A00C53A99 /* GKBaseViewController.swift */; };
 		578E35BA1DC98AB700B5C7EC /* GKConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E35B91DC98AB700B5C7EC /* GKConst.swift */; };
+		578E35C71DC9A9E100B5C7EC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E35C61DC9A9E100B5C7EC /* UIView+Extension.swift */; };
+		578E35CA1DC9B4AD00B5C7EC /* GKNetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E35C91DC9B4AD00B5C7EC /* GKNetworkUtil.swift */; };
+		578E35CE1DC9C6B400B5C7EC /* GKIOSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E35CD1DC9C6B400B5C7EC /* GKIOSViewController.swift */; };
+		578E35D01DC9C6ED00B5C7EC /* GKAndroidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E35CF1DC9C6ED00B5C7EC /* GKAndroidViewController.swift */; };
+		578E35D21DC9C6FE00B5C7EC /* GKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E35D11DC9C6FE00B5C7EC /* GKWebViewController.swift */; };
+		578E35D41DC9C78500B5C7EC /* GKClassifyTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E35D31DC9C78500B5C7EC /* GKClassifyTitleView.swift */; };
+		578E35D61DC9DE2900B5C7EC /* GKAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E35D51DC9DE2900B5C7EC /* GKAppViewController.swift */; };
+		578E35D81DC9EA6300B5C7EC /* GKDataClassModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E35D71DC9EA6300B5C7EC /* GKDataClassModel.swift */; };
+		6AEF1C5601F8E49A5E82727D /* Pods_IOGank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6505607F3CCD37C2C0EE8BC4 /* Pods_IOGank.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +95,17 @@
 		577E60811DC8843B00C53A99 /* GKMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKMeViewController.swift; sourceTree = "<group>"; };
 		577E60831DC8845A00C53A99 /* GKBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBaseViewController.swift; sourceTree = "<group>"; };
 		578E35B91DC98AB700B5C7EC /* GKConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKConst.swift; sourceTree = "<group>"; };
+		578E35C61DC9A9E100B5C7EC /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		578E35C91DC9B4AD00B5C7EC /* GKNetworkUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKNetworkUtil.swift; sourceTree = "<group>"; };
+		578E35CD1DC9C6B400B5C7EC /* GKIOSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKIOSViewController.swift; sourceTree = "<group>"; };
+		578E35CF1DC9C6ED00B5C7EC /* GKAndroidViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKAndroidViewController.swift; sourceTree = "<group>"; };
+		578E35D11DC9C6FE00B5C7EC /* GKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWebViewController.swift; sourceTree = "<group>"; };
+		578E35D31DC9C78500B5C7EC /* GKClassifyTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKClassifyTitleView.swift; sourceTree = "<group>"; };
+		578E35D51DC9DE2900B5C7EC /* GKAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKAppViewController.swift; sourceTree = "<group>"; };
+		578E35D71DC9EA6300B5C7EC /* GKDataClassModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDataClassModel.swift; sourceTree = "<group>"; };
+		6505607F3CCD37C2C0EE8BC4 /* Pods_IOGank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOGank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7932D557CC947D24C5FB73B8 /* Pods-IOGank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOGank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOGank/Pods-IOGank.debug.xcconfig"; sourceTree = "<group>"; };
+		BB2EBB2CBA780274F0C36353 /* Pods-IOGank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOGank.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOGank/Pods-IOGank.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AEF1C5601F8E49A5E82727D /* Pods_IOGank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +141,8 @@
 				577E60221DC863D200C53A99 /* IOGankTests */,
 				577E602D1DC863D200C53A99 /* IOGankUITests */,
 				577E600C1DC863D200C53A99 /* Products */,
+				B47A67E14B3D7A1FD7365D6B /* Pods */,
+				5A9743862C4749B4E45E2C40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,6 +248,10 @@
 			children = (
 				577E60461DC86DAC00C53A99 /* placeholder */,
 				577E607F1DC8842B00C53A99 /* GKHomeViewController.swift */,
+				578E35CD1DC9C6B400B5C7EC /* GKIOSViewController.swift */,
+				578E35CF1DC9C6ED00B5C7EC /* GKAndroidViewController.swift */,
+				578E35D11DC9C6FE00B5C7EC /* GKWebViewController.swift */,
+				578E35D51DC9DE2900B5C7EC /* GKAppViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -233,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				577E60481DC86DAC00C53A99 /* placeholder */,
+				578E35D71DC9EA6300B5C7EC /* GKDataClassModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				577E604A1DC86DAC00C53A99 /* placeholder */,
+				578E35D31DC9C78500B5C7EC /* GKClassifyTitleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,6 +311,7 @@
 			children = (
 				577E60511DC86DAC00C53A99 /* placeholder */,
 				578E35B91DC98AB700B5C7EC /* GKConst.swift */,
+				578E35C91DC9B4AD00B5C7EC /* GKNetworkUtil.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -340,8 +370,26 @@
 		578E35BC1DC99AC700B5C7EC /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				578E35C61DC9A9E100B5C7EC /* UIView+Extension.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		5A9743862C4749B4E45E2C40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6505607F3CCD37C2C0EE8BC4 /* Pods_IOGank.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B47A67E14B3D7A1FD7365D6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7932D557CC947D24C5FB73B8 /* Pods-IOGank.debug.xcconfig */,
+				BB2EBB2CBA780274F0C36353 /* Pods-IOGank.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,9 +399,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 577E60331DC863D200C53A99 /* Build configuration list for PBXNativeTarget "IOGank" */;
 			buildPhases = (
+				7C7246DCD5A391DE7B4C6320 /* [CP] Check Pods Manifest.lock */,
 				577E60071DC863D200C53A99 /* Sources */,
 				577E60081DC863D200C53A99 /* Frameworks */,
 				577E60091DC863D200C53A99 /* Resources */,
+				9C561E89B26035A7832E7EE4 /* [CP] Embed Pods Frameworks */,
+				4E5174022E7838AAB0C2FE09 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -488,19 +539,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E5174022E7838AAB0C2FE09 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOGank/Pods-IOGank-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C7246DCD5A391DE7B4C6320 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C561E89B26035A7832E7EE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOGank/Pods-IOGank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		577E60071DC863D200C53A99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				578E35D81DC9EA6300B5C7EC /* GKDataClassModel.swift in Sources */,
+				578E35CE1DC9C6B400B5C7EC /* GKIOSViewController.swift in Sources */,
+				578E35D41DC9C78500B5C7EC /* GKClassifyTitleView.swift in Sources */,
+				578E35D01DC9C6ED00B5C7EC /* GKAndroidViewController.swift in Sources */,
 				577E60691DC870F300C53A99 /* LoginViewController.swift in Sources */,
+				578E35D21DC9C6FE00B5C7EC /* GKWebViewController.swift in Sources */,
 				577E60841DC8845A00C53A99 /* GKBaseViewController.swift in Sources */,
+				578E35D61DC9DE2900B5C7EC /* GKAppViewController.swift in Sources */,
 				577E60801DC8842B00C53A99 /* GKHomeViewController.swift in Sources */,
 				577E607E1DC8841D00C53A99 /* GKHistoryViewController.swift in Sources */,
+				578E35CA1DC9B4AD00B5C7EC /* GKNetworkUtil.swift in Sources */,
 				577E607C1DC883E700C53A99 /* GKTabBarController.swift in Sources */,
 				577E60821DC8843B00C53A99 /* GKMeViewController.swift in Sources */,
 				577E607A1DC883C500C53A99 /* GKNavigationController.swift in Sources */,
 				578E35BA1DC98AB700B5C7EC /* GKConst.swift in Sources */,
+				578E35C71DC9A9E100B5C7EC /* UIView+Extension.swift in Sources */,
 				577E600F1DC863D200C53A99 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -642,6 +749,7 @@
 		};
 		577E60341DC863D200C53A99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7932D557CC947D24C5FB73B8 /* Pods-IOGank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -658,6 +766,7 @@
 		};
 		577E60351DC863D200C53A99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB2EBB2CBA780274F0C36353 /* Pods-IOGank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

@@ -23,3 +23,7 @@ func GKGlobalColor() -> UIColor {
 func GKGlobalRedColor() -> UIColor {
     return GKColor(r: 245, g: 80, b: 83, a: 1.0)
 }
+
+//
+let ScreenWidth = UIScreen.main.bounds.width
+let ScreenHeight = UIScreen.main.bounds.height
