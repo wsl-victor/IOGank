@@ -12,7 +12,7 @@ class GKMeViewController: GKBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title="我"
+
         // Do any additional setup after loading the view.
     }
 

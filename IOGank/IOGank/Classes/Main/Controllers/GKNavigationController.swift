@@ -12,9 +12,28 @@ class GKNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let navBar = UINavigationBar.appearance()
+        navBar.barTintColor = GKGlobalRedColor()
+        navBar.tintColor = UIColor.white
+        navBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: UIFont.systemFont(ofSize: 20)]
+        
     }
+    
+    
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        if viewControllers.count>0 {
+            viewController.hidesBottomBarWhenPushed = true
+            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: ""), style: .plain, target: self, action: #selector(GKNavigationController.navigationBackClick))
+        }
+    }
+    
+    func navigationBackClick()  {
+        if UIApplication.shared.isNetworkActivityIndicatorVisible {
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+        }
+        popViewController(animated: true)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

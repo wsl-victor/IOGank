@@ -26,16 +26,13 @@
 		577E60661DC86DAC00C53A99 /* placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 577E60581DC86DAC00C53A99 /* placeholder */; };
 		577E60671DC86DAC00C53A99 /* placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 577E605A1DC86DAC00C53A99 /* placeholder */; };
 		577E60691DC870F300C53A99 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E60681DC870F300C53A99 /* LoginViewController.swift */; };
-		577E60701DC8816200C53A99 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E606F1DC8816200C53A99 /* Home.storyboard */; };
-		577E60721DC8817300C53A99 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E60711DC8817300C53A99 /* History.storyboard */; };
-		577E60741DC8817E00C53A99 /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E60731DC8817E00C53A99 /* Me.storyboard */; };
-		577E60761DC8819500C53A99 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E60751DC8819500C53A99 /* Login.storyboard */; };
 		577E607A1DC883C500C53A99 /* GKNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E60791DC883C500C53A99 /* GKNavigationController.swift */; };
 		577E607C1DC883E700C53A99 /* GKTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E607B1DC883E700C53A99 /* GKTabBarController.swift */; };
 		577E607E1DC8841D00C53A99 /* GKHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E607D1DC8841D00C53A99 /* GKHistoryViewController.swift */; };
 		577E60801DC8842B00C53A99 /* GKHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E607F1DC8842B00C53A99 /* GKHomeViewController.swift */; };
 		577E60821DC8843B00C53A99 /* GKMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E60811DC8843B00C53A99 /* GKMeViewController.swift */; };
 		577E60841DC8845A00C53A99 /* GKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E60831DC8845A00C53A99 /* GKBaseViewController.swift */; };
+		578E35BA1DC98AB700B5C7EC /* GKConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E35B91DC98AB700B5C7EC /* GKConst.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,16 +79,13 @@
 		577E605A1DC86DAC00C53A99 /* placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = placeholder; sourceTree = "<group>"; };
 		577E60681DC870F300C53A99 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		577E606A1DC87FB200C53A99 /* IOGank-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "IOGank-Bridging-Header.h"; path = "Classes/Main/Utils/IOGank-Bridging-Header.h"; sourceTree = "<group>"; };
-		577E606F1DC8816200C53A99 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		577E60711DC8817300C53A99 /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
-		577E60731DC8817E00C53A99 /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
-		577E60751DC8819500C53A99 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		577E60791DC883C500C53A99 /* GKNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKNavigationController.swift; sourceTree = "<group>"; };
 		577E607B1DC883E700C53A99 /* GKTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKTabBarController.swift; sourceTree = "<group>"; };
 		577E607D1DC8841D00C53A99 /* GKHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKHistoryViewController.swift; sourceTree = "<group>"; };
 		577E607F1DC8842B00C53A99 /* GKHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKHomeViewController.swift; sourceTree = "<group>"; };
 		577E60811DC8843B00C53A99 /* GKMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKMeViewController.swift; sourceTree = "<group>"; };
 		577E60831DC8845A00C53A99 /* GKBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBaseViewController.swift; sourceTree = "<group>"; };
+		578E35B91DC98AB700B5C7EC /* GKConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKConst.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +248,7 @@
 		577E604B1DC86DAC00C53A99 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				578E35BC1DC99AC700B5C7EC /* Category */,
 				577E604C1DC86DAC00C53A99 /* Controllers */,
 				577E604E1DC86DAC00C53A99 /* Model */,
 				577E60501DC86DAC00C53A99 /* Utils */,
@@ -286,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				577E60511DC86DAC00C53A99 /* placeholder */,
+				578E35B91DC98AB700B5C7EC /* GKConst.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -337,12 +333,15 @@
 			isa = PBXGroup;
 			children = (
 				577E60171DC863D200C53A99 /* LaunchScreen.storyboard */,
-				577E606F1DC8816200C53A99 /* Home.storyboard */,
-				577E60711DC8817300C53A99 /* History.storyboard */,
-				577E60731DC8817E00C53A99 /* Me.storyboard */,
-				577E60751DC8819500C53A99 /* Login.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		578E35BC1DC99AC700B5C7EC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,7 +455,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				577E60651DC86DAC00C53A99 /* placeholder in Resources */,
-				577E60761DC8819500C53A99 /* Login.storyboard in Resources */,
 				577E605E1DC86DAC00C53A99 /* placeholder in Resources */,
 				577E60661DC86DAC00C53A99 /* placeholder in Resources */,
 				577E60671DC86DAC00C53A99 /* placeholder in Resources */,
@@ -470,10 +468,7 @@
 				577E60601DC86DAC00C53A99 /* placeholder in Resources */,
 				577E60621DC86DAC00C53A99 /* placeholder in Resources */,
 				577E60161DC863D200C53A99 /* Assets.xcassets in Resources */,
-				577E60741DC8817E00C53A99 /* Me.storyboard in Resources */,
 				577E60631DC86DAC00C53A99 /* placeholder in Resources */,
-				577E60701DC8816200C53A99 /* Home.storyboard in Resources */,
-				577E60721DC8817300C53A99 /* History.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +500,7 @@
 				577E607C1DC883E700C53A99 /* GKTabBarController.swift in Sources */,
 				577E60821DC8843B00C53A99 /* GKMeViewController.swift in Sources */,
 				577E607A1DC883C500C53A99 /* GKNavigationController.swift in Sources */,
+				578E35BA1DC98AB700B5C7EC /* GKConst.swift in Sources */,
 				577E600F1DC863D200C53A99 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

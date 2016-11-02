@@ -12,32 +12,40 @@ class GKTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+         tabBar.tintColor = UIColor(red: 245 / 255, green: 80 / 255, blue: 83 / 255, alpha: 1.0)
         createNavView()
         
     }
     
     //添加所有控制器
     private func createNavView(){
-        let  homeVc = UIStoryboard.init(name: "Home", bundle: Bundle.main).instantiateInitialViewController()
-        let  homeItem = UITabBarItem.init(tabBarSystemItem: .favorites, tag: 0)
-        homeVc?.tabBarItem=homeItem
-        homeVc?.title="干货"
+        let  homeVc = GKHomeViewController()
+        let  homeItem = UITabBarItem.init(title: "干货", image: UIImage.init(named: "TabBar_home_23x23_"), selectedImage: UIImage.init(named: "TabBar_home_23x23_selected"))
+        homeVc.tabBarItem=homeItem
+        let navHome=GKNavigationController()
+        navHome.addChildViewController(homeVc)
+
         
-        let  historyVc = UIStoryboard.init(name: "History", bundle: Bundle.main).instantiateInitialViewController()
-        let  historyItem = UITabBarItem.init(tabBarSystemItem: .history, tag: 0)
-        historyVc?.tabBarItem=historyItem
-        historyVc?.title="收藏"
+        let  historyVc = GKHistoryViewController()
+        let  historyItem = UITabBarItem.init(title: "小憩", image: UIImage.init(named: "TabBar_gift_23x23_"), selectedImage: UIImage.init(named: "TabBar_gift_23x23_selected"))
+        historyVc.tabBarItem=historyItem
+        let navHistory=GKNavigationController()
+        navHistory.addChildViewController(historyVc)
+
         
         
-        let  meVc = UIStoryboard.init(name: "Me", bundle: Bundle.main).instantiateInitialViewController()
-        let  meItem = UITabBarItem.init(tabBarSystemItem: .mostRecent, tag: 0)
-        meVc?.tabBarItem=meItem
-        meVc?.title="我"
-        
-        addChildViewController(homeVc!)
-        addChildViewController(historyVc!)
-        addChildViewController(meVc!)
+        let  meVc = GKMeViewController()
+        let  meItem = UITabBarItem.init(title: "更多", image: UIImage.init(named: "TabBar_me_boy_23x23_"), selectedImage: UIImage.init(named: "TabBar_me_boy_23x23_selected"))
+        meVc.tabBarItem=meItem
+        let navMe=GKNavigationController()
+        navMe.addChildViewController(meVc)
+    
+        addChildViewController(navHome)
+        addChildViewController(navHistory)
+        addChildViewController(navMe)
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

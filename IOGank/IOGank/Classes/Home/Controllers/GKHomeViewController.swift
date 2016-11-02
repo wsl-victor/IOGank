@@ -12,7 +12,7 @@ class GKHomeViewController: GKBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title="干货"
+
         // Do any additional setup after loading the view.
     }
 

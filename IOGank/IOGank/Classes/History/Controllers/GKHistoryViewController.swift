@@ -12,7 +12,6 @@ class GKHistoryViewController: GKBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title="收藏"
 
         // Do any additional setup after loading the view.
     }
