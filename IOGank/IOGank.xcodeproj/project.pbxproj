@@ -41,6 +41,7 @@
 		578E35D41DC9C78500B5C7EC /* GKClassifyTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E35D31DC9C78500B5C7EC /* GKClassifyTitleView.swift */; };
 		578E35D61DC9DE2900B5C7EC /* GKAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E35D51DC9DE2900B5C7EC /* GKAppViewController.swift */; };
 		578E35D81DC9EA6300B5C7EC /* GKDataClassModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E35D71DC9EA6300B5C7EC /* GKDataClassModel.swift */; };
+		57B4E3AC1DCAD8AC007B023A /* GKIOSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B4E3AB1DCAD8AC007B023A /* GKIOSTableViewCell.swift */; };
 		6AEF1C5601F8E49A5E82727D /* Pods_IOGank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6505607F3CCD37C2C0EE8BC4 /* Pods_IOGank.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,7 @@
 		578E35D31DC9C78500B5C7EC /* GKClassifyTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKClassifyTitleView.swift; sourceTree = "<group>"; };
 		578E35D51DC9DE2900B5C7EC /* GKAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKAppViewController.swift; sourceTree = "<group>"; };
 		578E35D71DC9EA6300B5C7EC /* GKDataClassModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDataClassModel.swift; sourceTree = "<group>"; };
+		57B4E3AB1DCAD8AC007B023A /* GKIOSTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKIOSTableViewCell.swift; sourceTree = "<group>"; };
 		6505607F3CCD37C2C0EE8BC4 /* Pods_IOGank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOGank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7932D557CC947D24C5FB73B8 /* Pods-IOGank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOGank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOGank/Pods-IOGank.debug.xcconfig"; sourceTree = "<group>"; };
 		BB2EBB2CBA780274F0C36353 /* Pods-IOGank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOGank.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOGank/Pods-IOGank.release.xcconfig"; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 			children = (
 				577E604A1DC86DAC00C53A99 /* placeholder */,
 				578E35D31DC9C78500B5C7EC /* GKClassifyTitleView.swift */,
+				57B4E3AB1DCAD8AC007B023A /* GKIOSTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -597,6 +600,7 @@
 				578E35D41DC9C78500B5C7EC /* GKClassifyTitleView.swift in Sources */,
 				578E35D01DC9C6ED00B5C7EC /* GKAndroidViewController.swift in Sources */,
 				577E60691DC870F300C53A99 /* LoginViewController.swift in Sources */,
+				57B4E3AC1DCAD8AC007B023A /* GKIOSTableViewCell.swift in Sources */,
 				578E35D21DC9C6FE00B5C7EC /* GKWebViewController.swift in Sources */,
 				577E60841DC8845A00C53A99 /* GKBaseViewController.swift in Sources */,
 				578E35D61DC9DE2900B5C7EC /* GKAppViewController.swift in Sources */,

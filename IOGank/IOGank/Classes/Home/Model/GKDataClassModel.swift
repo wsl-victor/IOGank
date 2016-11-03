@@ -28,7 +28,7 @@ class GKDataClassModel: NSObject {
     
     var who: String?
     
-    var images: [[String: AnyObject]]?
+    var images: [String]?
     
     init(dict: [String: AnyObject]) {
         super.init()
@@ -42,7 +42,7 @@ class GKDataClassModel: NSObject {
         url = dict["url"] as? String
         used = dict["used"] as? Bool
         who = dict["who"] as? String
-         images = dict["images"] as? [[String: AnyObject]] ?? [[:]]
+         images = dict["images"] as? [String] ?? []
     }
 
 }

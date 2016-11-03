@@ -8,13 +8,26 @@
 
 import UIKit
 
-class GKIOSViewController: GKBaseViewController {
+let iosTableViewCellID = "iosTableViewCell"
 
+class GKIOSViewController: GKBaseViewController,UITableViewDelegate,UITableViewDataSource {
+
+     var results = [GKDataClassModel]()
+    
+    var iosTableView : UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         
         GKNetworkUtil.shareNetworkUtil.loadClassifyAllData("Android", "10", "1") {(topics) in
             
+            self.results=topics
+            print("111111")
+            print(self.results.count)
+            
+            
+            self.iosTableView.reloadData()
            let  ab  = topics.last! as GKDataClassModel
             
             
@@ -24,21 +37,46 @@ class GKIOSViewController: GKBaseViewController {
         }
         // Do any additional setup after loading the view.
     }
+    
+    //初始化界面
+    func setupUI ()  {
+        iosTableView=UITableView.init(frame: CGRect.init(x: 0, y: 64, width: ScreenWidth, height: ScreenHeight-113), style: .plain)
+        iosTableView.delegate=self
+        iosTableView.dataSource=self
+        iosTableView.rowHeight=100
+        self.view.addSubview(iosTableView)
+        iosTableView.register(GKIOSTableViewCell.self, forCellReuseIdentifier: iosTableViewCellID)
+    }
 
+    
+    
+    
+    
+    // MARK: - UITableViewDataSource
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return results.count 
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: iosTableViewCellID) as! GKIOSTableViewCell
+        cell.GKDataModel=results[indexPath.row]
+        
+        return cell
+        
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

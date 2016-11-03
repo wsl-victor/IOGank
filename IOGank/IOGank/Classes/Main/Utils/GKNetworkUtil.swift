@@ -22,14 +22,14 @@ class GKNetworkUtil: NSObject {
     func loadClassifyAllData(_ category:String,_ pageSize:String,_ pageNo:String,finished: @escaping (_ classDatas:[GKDataClassModel])->() ){
         let url="http://gank.io/api/data"
         let urlString = url+"/"+category+"/"+pageSize+"/"+pageNo
-        print(urlString)
+        print("==打印的=="+urlString)
         
        Alamofire
             .request(urlString, method: .get, parameters: nil, encoding:URLEncoding.default, headers: nil)
             .responseJSON { (response) in
-                print(response)
+               
                     guard response.result.isSuccess else {
-            
+                        print("==打印的返回==")
                             return
                     }
                 if let value = response.result.value {
