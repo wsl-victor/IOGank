@@ -12,24 +12,6 @@ import Kingfisher
 
 class GKIOSTableViewCell: UITableViewCell {
     
-    var GKDataModel:GKDataClassModel? {
-        
-        didSet {
-            let url = GKDataModel?.images?.last
-            print(url)
-            if (url==nil) {
-                
-            }else{
-                imageIcon.kf.setImage(with: URL(string: (url)!) as? Resource, placeholder: UIImage.init(named: "TabBar_category_23x23_"), options: nil, progressBlock: nil, completionHandler: nil)
-            }
-            
-            titleLa.text=GKDataModel?.desc
-            authorLa.text=GKDataModel?.who
-            timeLa.text=GKDataModel?.createdAt
-        }
-        
-    }
-    
     
 
     var imageIcon : UIImageView!
@@ -38,62 +20,91 @@ class GKIOSTableViewCell: UITableViewCell {
     var timeLa    : UILabel!
     
    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-            imageIcon = UIImageView()
-            titleLa = UILabel()
-            authorLa = UILabel()
-            timeLa = UILabel()
-            contentView.addSubview(imageIcon)
-            contentView.addSubview(titleLa)
-            contentView.addSubview(authorLa)
-            contentView.addSubview(timeLa)
+    
+        super.init(style: UITableViewCellStyle.default, reuseIdentifier: reuseIdentifier)
+        print("=aaaaaa==UITableViewCellStyle===")
+        self.imageIcon = UIImageView()
+        self.titleLa = UILabel()
+        self.authorLa = UILabel()
+        self.timeLa = UILabel()
+        self.contentView.addSubview(self.imageIcon)
+        self.contentView.addSubview(self.titleLa)
+        self.contentView.addSubview(self.authorLa)
+        self.contentView.addSubview(self.timeLa)
+    
     }
     
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("==aaaaaa==init(coder:) has not been implemented")
+    }
+    
+    
+    //初始化视图
     func setupUI(){
-        imageIcon.snp.makeConstraints { (make) in
+        self.imageIcon.snp.makeConstraints { (make) in
             make.width.equalTo(120)
             make.left.equalTo(self).offset(10)
             make.top.equalTo(self).offset(10)
             make.bottom.equalTo(self).offset(-10)
         }
-        titleLa.snp.makeConstraints { (make) in
+        self.titleLa.snp.makeConstraints { (make) in
             make.top.equalTo(self).offset(10)
-            make.left.equalTo(imageIcon.snp.right).offset(5)
+            make.left.equalTo(self.imageIcon.snp.right).offset(5)
             make.right.equalTo(self).offset(-10)
             make.height.equalTo(20)
         }
-        authorLa.snp.makeConstraints { (make) in
-            make.top.equalTo(titleLa.snp.bottom).offset(5)
-            make.left.equalTo(imageIcon.snp.right).offset(5)
+        self.authorLa.snp.makeConstraints { (make) in
+            make.top.equalTo(self.titleLa.snp.bottom).offset(5)
+            make.left.equalTo(self.imageIcon.snp.right).offset(5)
             make.right.equalTo(self).offset(-10)
             make.height.equalTo(20)
         }
-        timeLa.snp.makeConstraints { (make) in
-            make.top.equalTo(authorLa.snp.bottom).offset(5)
-            make.left.equalTo(imageIcon.snp.right).offset(5)
+        self.timeLa.snp.makeConstraints { (make) in
+            make.top.equalTo(self.authorLa.snp.bottom).offset(5)
+            make.left.equalTo(self.imageIcon.snp.right).offset(5)
             make.right.equalTo(self).offset(-10)
             make.height.equalTo(20)
         }
         
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+   
     override func layoutSubviews() {
         super.layoutSubviews()
         setupUI()
     }
     
-  
+    //类方法，重用标识符
+    class func cellID() -> String {
+        return "GKIOSTableViewCell"
+    }
     
     
-    
-    
+    var GKDataModel:GKDataClassModel? {
+        
+        didSet {
+             self.imageIcon.image=UIImage.init(named: "TabBar_category_23x23_")
+            let str = GKDataModel?.images?.last
+            print(str)
+            
+           
+            if (str==nil) {
+                
+            }else{
+                //self.imageIcon.image=UIImage.init(named: "TabBar_category_23x23_")
+//                self.imageIcon.kf.setImage(with: URL.init(string: url!), placeholder: UIImage.init(named: "TabBar_category_23x23_"), options: nil , progressBlock: nil, completionHandler: nil)
+                let url = URL(string:str!)
+               // self.imageIcon.kf.setImage(with: url)
+                self.imageIcon.sd_setImage(with: url)
+            }
+            
+            self.titleLa.text=GKDataModel?.desc
+            self.authorLa.text=GKDataModel?.who
+            self.timeLa.text=GKDataModel?.createdAt
+        }
+        
+    }
 
-    
-    
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

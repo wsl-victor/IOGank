@@ -8,8 +8,6 @@
 
 import UIKit
 
-let iosTableViewCellID = "iosTableViewCell"
-
 class GKIOSViewController: GKBaseViewController,UITableViewDelegate,UITableViewDataSource {
 
      var results = [GKDataClassModel]()
@@ -18,7 +16,7 @@ class GKIOSViewController: GKBaseViewController,UITableViewDelegate,UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+        setupIOSUI()
         
         GKNetworkUtil.shareNetworkUtil.loadClassifyAllData("Android", "10", "1") {(topics) in
             
@@ -39,13 +37,14 @@ class GKIOSViewController: GKBaseViewController,UITableViewDelegate,UITableViewD
     }
     
     //初始化界面
-    func setupUI ()  {
-        iosTableView=UITableView.init(frame: CGRect.init(x: 0, y: 64, width: ScreenWidth, height: ScreenHeight-113), style: .plain)
-        iosTableView.delegate=self
-        iosTableView.dataSource=self
-        iosTableView.rowHeight=100
-        self.view.addSubview(iosTableView)
-        iosTableView.register(GKIOSTableViewCell.self, forCellReuseIdentifier: iosTableViewCellID)
+    func setupIOSUI ()  {
+        self.iosTableView=UITableView.init(frame: CGRect.init(x: 0, y: 64, width: ScreenWidth, height: ScreenHeight-113), style: .plain)
+         self.iosTableView.delegate=self
+         self.iosTableView.dataSource=self
+         self.iosTableView.rowHeight=100
+        self.iosTableView.register(GKIOSTableViewCell.self, forCellReuseIdentifier: GKIOSTableViewCell.cellID())
+        self.view.addSubview( self.iosTableView)
+       
     }
 
     
@@ -58,15 +57,15 @@ class GKIOSViewController: GKBaseViewController,UITableViewDelegate,UITableViewD
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return results.count 
+            return self.results.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: iosTableViewCellID) as! GKIOSTableViewCell
-        cell.GKDataModel=results[indexPath.row]
+        var cell = tableView.dequeueReusableCell(withIdentifier: GKIOSTableViewCell.cellID(), for: indexPath) as? GKIOSTableViewCell
+        cell?.GKDataModel=results[indexPath.row]
         
-        return cell
+        return cell!
         
     }
     
