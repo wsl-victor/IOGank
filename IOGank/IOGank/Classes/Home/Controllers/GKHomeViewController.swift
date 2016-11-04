@@ -16,7 +16,6 @@ class GKHomeViewController: GKBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setuHomepUI()
-       
     }
     
     override func viewWillLayoutSubviews() {
@@ -28,11 +27,17 @@ class GKHomeViewController: GKBaseViewController {
         automaticallyAdjustsScrollViewInsets = false
         view.backgroundColor = GKGlobalColor()
         navigationItem.titleView = titleView
-        view.addSubview(scrollView)
-        self.scrollView.addSubview(iOSVC.view)
-        self.scrollView.addSubview(AndroidVC.view)
-        self.scrollView.addSubview(WebVC.view)
-        self.scrollView.addSubview(AppVC.view)
+        view.addSubview(self.scrollView)
+        addChildViewController(self.iOSVC)
+        addChildViewController(self.AndroidVC)
+        addChildViewController(self.WebVC)
+        addChildViewController(self.AppVC)
+        self.scrollView.addSubview(self.iOSVC.view)
+        self.scrollView.addSubview(self.AndroidVC.view)
+        self.scrollView.addSubview(self.WebVC.view)
+        self.scrollView.addSubview(self.AppVC.view)
+        
+        
         
 
     }

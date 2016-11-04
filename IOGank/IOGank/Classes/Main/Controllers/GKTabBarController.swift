@@ -24,6 +24,7 @@ class GKTabBarController: UITabBarController {
         homeVc.tabBarItem=homeItem
         let navHome=GKNavigationController()
         navHome.addChildViewController(homeVc)
+        
 
         
         let  historyVc = GKHistoryViewController()

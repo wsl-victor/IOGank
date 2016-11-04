@@ -23,8 +23,10 @@ class GKNavigationController: UINavigationController {
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if viewControllers.count>0 {
             viewController.hidesBottomBarWhenPushed = true
-            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: ""), style: .plain, target: self, action: #selector(GKNavigationController.navigationBackClick))
+            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "checkUserType_backward_9x15_"), style: .plain, target: self, action: #selector(GKNavigationController.navigationBackClick))
         }
+        super.pushViewController(viewController, animated: true)
+
     }
     
     func navigationBackClick()  {

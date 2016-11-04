@@ -62,11 +62,21 @@ class GKIOSViewController: GKBaseViewController,UITableViewDelegate,UITableViewD
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: GKIOSTableViewCell.cellID(), for: indexPath) as? GKIOSTableViewCell
+        let   cell = tableView.dequeueReusableCell(withIdentifier: GKIOSTableViewCell.cellID(), for: indexPath) as? GKIOSTableViewCell
         cell?.GKDataModel=results[indexPath.row]
         
         return cell!
         
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      let detailVc = GKDetailViewController()
+        print("==url=")
+        detailVc.dataModel=results[(indexPath as NSIndexPath).row]
+        
+     
+        
+        navigationController?.pushViewController(detailVc, animated:true)
     }
     
     
